@@ -20,3 +20,15 @@ map_create_post_type( $post_type_args );
 
 This function calls a class that will take the $args and populate the $labels and $args automatically. 
 
+You can call "map_create_taxonomy( $args )" from your theme functions.php
+
+<pre>
+$taxonomy_args = array(
+	'singular' 		=> 'Taxonomy',
+	'plural' 		=> 'Taxonomies',
+	'slug'			=> 'taxonomy',
+	'post_types' 	=> array( 'post_type' ),
+	'hierarchical' 	=> true
+);
+map_create_taxonomy( $taxonomy_args );
+</pre>

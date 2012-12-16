@@ -5,6 +5,7 @@ Usage
 
 You can call "map_create_post_type( $args )" from your theme functions.php
 
+<code>
 $post_type_args = array(
 	'singular' 		=> 'Match',
 	'plural' 		=> 'Matches',
@@ -15,6 +16,7 @@ $post_type_args = array(
 	'compat'		=> 'post'
 );
 map_create_post_type( $post_type_args );
+</code>
 
 This function calls a class that will take the $args and populate the $labels and $args automatically. 
 

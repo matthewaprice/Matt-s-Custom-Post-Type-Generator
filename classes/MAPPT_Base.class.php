@@ -4,10 +4,6 @@ class MAPPT {
 	public function __construct() {
 		
 	}
-	
-	public function init() {
-		
-	}
 	    
     public function initPostType() {
 

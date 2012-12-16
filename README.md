@@ -1,4 +1,4 @@
-WP-Custom-Post-Type-Generator
+Matt's-Custom-Post-Type-Generator
 =============================
 
 Usage

@@ -68,7 +68,7 @@ class MAPPT {
 			'menu_position' => 500,
 			'rewrite' => true,            
 			'rewrite' => array(
-			    'slug' => $this->this->slug,
+			    'slug' => $this->slug,
 			    'with_front' => FALSE,
 			  ),
 			'menu_icon' => $this->icon,	  				 

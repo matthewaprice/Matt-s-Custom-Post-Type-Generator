@@ -14,8 +14,6 @@ foreach ( $mappt_classes as $mappt_class ) :
 	include( "classes/" . $mappt_class . ".class.php" );
 endforeach;
 
-$mappt = new MAPPT();
-
 function map_create_post_type( $args ) {
 	
 	$post_type = new MAPPT();

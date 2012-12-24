@@ -73,7 +73,7 @@ class MAPPT {
 			  ),
 			'menu_icon' => $this->icon,	  				 
 			'supports' => $this->supports,
-			'register_meta_box_cb' => array( &$this, $this->meta_boxes )    	
+			'register_meta_box_cb' => $this->meta_boxes
 		); 
 		
 		$this->post_type_args = $post_type_args;

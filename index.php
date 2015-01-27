@@ -1,11 +1,10 @@
 <?php
 /*
-Plugin Name: Matt's Post Types
-Plugin URI: http://matthewaprice.com
+Package Name: Matt's Post Types
+Author URI: http://matthewaprice.com
 Description: Makes Post Types
 Version: 1.0
 Author: Matthew Price
-Author URI: http://matthewaprice.com
 License: GPL2
 */
 
@@ -15,7 +14,7 @@ foreach ( $mappt_classes as $mappt_class ) :
 endforeach;
 
 function map_create_post_type( $args ) {
-	
+
 	$post_type = new MAPPT();
 	$post_type->setPostTypeOptions(
 		$args['singular'],
@@ -27,7 +26,7 @@ function map_create_post_type( $args ) {
 		$args['compat']
 	);
 	$post_type->setPostTypeArguments();
-	$post_type->initPostType();		
+	$post_type->initPostType();
 
 }
 
@@ -41,6 +40,6 @@ function map_create_taxonomy( $args ) {
 		$args['post_types'],
 		$args['hierarchical']
 	);
-	$taxonomoy->initTaxonomy();	
+	$taxonomoy->initTaxonomy();
 
 }

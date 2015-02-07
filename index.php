@@ -1,13 +1,4 @@
 <?php
-/*
-Package Name: Matt's Post Types
-Author URI: http://matthewaprice.com
-Description: Makes Post Types
-Version: 1.0
-Author: Matthew Price
-License: GPL2
-*/
-
 $mappt_classes = array( 'MAPPT_Base' );
 foreach ( $mappt_classes as $mappt_class ) :
 	include( "classes/" . $mappt_class . ".class.php" );
